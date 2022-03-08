@@ -19,14 +19,11 @@ This repository contains the companion material for the following publication:
 
 > *Ali Riza Durmaz, Erik Natkowski, Nikolai Arnaudov, Petra Sonnweber-Ribic, Stefan Weihe, Sebastian Münstermann,
 Chris Eberl, Peter Gumbsch* - **Micromechanical fatigue experiments for validation of microstructure-sensitive fatigue simulation models**,
-submitted to International Journal of Fatigue
+International Journal of Fatigue 160 (2022), DOI: [10.1016/j.ijfatigue.2022.106824](https://doi.org/10.1016/j.ijfatigue.2022.106824)
 
 Please cite this paper if using the dataset or the code, and direct any questions regarding the dataset
 to [Ali Riza Durmaz](mailto:ali.riza.durmaz@iwm.fraunhofer.de), and any questions regarding the code to
 [Erik Natkowski](mailto:erik.natkowski@de.bosch.com).
-<!---
-The paper can be found at [Journal name](https://www.link-to-the-paper.com).
--->
 
 This work is released in collaboration of **Fraunhofer-Institut für Werkstoffmechanik IWM** and **Robert Bosch GmbH**.
 

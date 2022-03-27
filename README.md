@@ -30,19 +30,19 @@ This work is released in collaboration of **Fraunhofer-Institut für Werkstoffme
 ## Purpose of this Software 
 
 This software is a research prototype, solely developed for and published as
-part of the publication cited above. It will neither be maintained nor monitored in any way.
+part of the publication cited above. It is not guaranteed to be maintained nor monitored in any way.
 
 ## Structure of ViTeMi
 
 <img src="./data/graphical_abstract.png" width="800" height="320">
 
 The general procedure is as shown in the above image.
-Experimental data for a microfatigue specimen was acquired, among others, in form of EBSD measurements and damage locations time series.
-Based on the specimen's form, a macro simulation is carried out.
-Subsequently, based on the EBSD data, a micromechanical simulation model using a crystal plasticity ,material subroutine uses the macro model for the prescription of boundary conditions.
-From this model, e.g. fatigue indicator parameters (FIPs) can be determined and correllated with the experimentally observed damage locations to check the model's validity.
+Experimental high cycle fatigue data for a mesoscale fatigue specimens was acquired, among others, in form of EBSD measurements and image series capturing local damage evolution.
+Based on the specimen's shape, a macro simulation is carried out.
+Subsequently, based on the EBSD data, a micromechanical simulation model using a crystal plasticity, material subroutine uses the macro model for the prescription of boundary conditions.
+From this model, e.g. fatigue indicator parameters (FIPs) can be determined and correlated with the experimentally observed damage locations to check the model's validity.
 
-Accrodingly, the repository consists of three main subfolders:
+Accordingly, the repository consists of three main subfolders:
   - In `data`, the relevant experimental data an the access to it is described
   - `simulation` contains model files and helper scripts for the simulation
   - Useful Python scripts to plot data are contained in `script`

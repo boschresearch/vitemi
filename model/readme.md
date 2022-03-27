@@ -12,14 +12,14 @@ This is important to prescribe appropriate boundary conditions for the micromech
 As the specimen is fatigued in the very high cycle (VHCF) regime, no significant plastic deformation is expected at this scale.
 Therefore, we uses a linear-elastic material model with a YOUNG's modulus of `E = 210 GPa` and a POISSON's ratio of `ν = 0.3`.
 
-The calulated loading state is mapped to the micro model using a [submodeling approach](https://abaqus-docs.mit.edu/2017/English/SIMACAEANLRefMap/simaanl-c-submodeloverview.htm). 
+The calculated loading state is mapped to the micro model using a [submodeling approach](https://abaqus-docs.mit.edu/2017/English/SIMACAEANLRefMap/simaanl-c-submodeloverview.htm). 
 
 ## Micro model
 On the microscopic scale, a crystal plasticity (CP) model is used to consider the constitutive behavior for individual grains.
 The model itself is derived from the acquired electron backscatter diffraction (EBSD) data, which can be found in the repositories' `data` folder.
 This data is mapped to a regular voxel mesh and extruded by some elements in the out-of-plane-direction.
 
-The parametrization of the CP model is described in the accomponying paper.
+The parametrization of the CP model is described in the accompanying paper.
 It is mainly derived by fitting the model's homogenized response to cyclically stabilized stress-strain hysteresis curves acquired for macroscopic fatigue specimen.
 These hysteresis curves can also be found in the `data` folder.
 

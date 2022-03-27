@@ -1,7 +1,7 @@
 # Micromechanical modeling
 
 The micromechanical model features the meshed grain morphology in an elastic embedding.
-In addtion to the setup for the crystal plasticity (CP) model, it is described in the following.
+In addition to the setup for the crystal plasticity (CP) model, it is described in the following.
 The latter is integrated into ABAQUS by a user material subroutine (UMAT).
 
 ## Simulation model
@@ -19,12 +19,12 @@ Due to it's large size, the mesh file `Mesh.inp` is given on Fordatis.
 
 The grains are represented as sections by `*SECTION` cards and the grain's orientation is specified by local coordinate systems using the `*ORIENTATION` card.
 These orientations are specified by EULER angles, which can't be evaluated by ABAQUS directly.
-Therefore, this is done by a funtion in the FORTRAN subroutine and a text file `graindata.txt` is provided with the grain's EULER angles in BUNGE notation.
+Therefore, this is done by a function in the FORTRAN subroutine and a text file `graindata.txt` is provided with the grain's EULER angles in BUNGE notation.
 In this file, the line numbers correspond to the section numbering `G_X` and local coordinate system numbering `Grain-X`, where `X` is the 1-based line number.
 
 ## User material subroutine
 The main UMAT file is `umatCP.f90`, which gives the structure necessary to integrate CP material behavior.
-It includes `globals.f90`, where global parameters can be set seperately and imported into the main file.
+It includes `globals.f90`, where global parameters can be set separately and imported into the main file.
 
 CP material behavior must be given in the FORTRAN function `subroutine umat`, [as defined by ABAQUS](https://abaqus-docs.mit.edu/2017/English/SIMACAESUBRefMap/simasub-c-umat.htm).
 If the file `graindata.txt` is present as explained above, the provided algorithm will take care of rotation of global into local coordinates.
